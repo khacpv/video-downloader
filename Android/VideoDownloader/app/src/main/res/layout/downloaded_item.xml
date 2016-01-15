@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/thumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2222"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_menu_gallery" />
+
+    <FrameLayout
+        android:id="@+id/videoViewWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:visibility="invisible">
+
+        <com.sprylab.android.widget.TextureVideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loading"
+        android:layout_gravity="center" />
+
+    <include
+        layout="@layout/view_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#5b000000"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text="Title"
+        android:textColor="#FFF"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/progressDownload"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="bottom"
+        android:alpha="0"
+        android:indeterminateTint="#FFFFBB33"
+        android:max="100" />
+</FrameLayout>

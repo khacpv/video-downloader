@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_social"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Uploaded Videos" />
+        <item
+            android:id="@+id/nav_social_group"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Groups Video" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_downloaded"
+            android:icon="@drawable/ic_control_download"
+            android:title="Downloaded" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Setting" />
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/nav_group_develop">
+        <item
+            android:id="@+id/nav_develop"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Develop" />
+    </group>
+
+
+    <item android:title="Say thanks to us">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_menu_rate"
+                android:title="Rate" />
+        </menu>
+    </item>
+
+</menu>

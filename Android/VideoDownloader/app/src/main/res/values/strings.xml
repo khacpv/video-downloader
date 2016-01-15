@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Video Downloader</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="facebook_app_id">471323239741852</string>
+
+    <string name="ads_bottom_banner_group">1ca-app-pub-2681309004534126/7066081099</string>
+    <string name="ads_bottom_banner_social">1ca-app-pub-2681309004534126/3973013891</string>
+    <string name="ads_bottom_intertitial_list_video">1ca-app-pub-2681309004534126/8403213498</string>
+    <string name="ads_interstitial_list_video">1ca-app-pub-2681309004534126/3554211491</string>
+
+
+    <string name="test_device_id_mi3">92655ABB19FB9B607C33340C8EFE9051</string>
+
+    <string name="share_text">VDD</string>
+    <string name="share_link">https://play.google.com/store/apps/details?id=com.oic.vdd</string>
+
+    <string name="parse_app_id">OIIcshBf1bzaa6oqss3clX8m4Ny3QVm2PhvJIP86</string>
+    <string name="parse_client_key">z27mJllZEfDGhjDDAQL1mlv2zrp8JuhxCGC78eNc</string>
+</resources>

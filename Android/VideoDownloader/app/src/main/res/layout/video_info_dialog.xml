@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/thumb"
+        android:src="@drawable/ic_control_play"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:background="@color/colorYellow"
+        android:contentDescription="@string/app_name" />
+    <TextView
+        android:id="@+id/_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@id/thumb"
+        android:text="Title: " />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@id/thumb"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/_title"
+        android:layout_toEndOf="@id/_title"
+        android:text="video" />
+    <TextView
+        android:id="@+id/_pathLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_below="@id/_title"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Path: "/>
+    <TextView
+        android:id="@+id/pathLocal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_below="@id/_title"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:layout_toRightOf="@id/_pathLocal"
+        android:layout_toEndOf="@id/_pathLocal"
+        android:text="unsaved"
+        android:clickable="true"
+        android:autoLink="web"/>
+    <TextView
+        android:id="@+id/_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_below="@id/_pathLocal"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Uri: "/>
+    <TextView
+        android:id="@+id/path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_below="@id/_pathLocal"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:layout_toRightOf="@id/_path"
+        android:layout_toEndOf="@id/_path"
+        android:text="no url"
+        android:clickable="true"
+        android:autoLink="web"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loading"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp" />
+</RelativeLayout>
